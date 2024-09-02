@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POS Coffee Shop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[url('bg.png')] bg-no-repeat bg-cover bg-fixed">
+    <div class="grid grid-cols-2">
+      <!--item -->
+      <div class="grid grid-cols-4 mt-5 mx-10 gap-5">
+        <div class="bg-[#7a5e46] shadow-lg rounded-xl flex justify-center w-44">
+          <div>
+            <img src="Espresso.webp" alt="" class="rounded-3xl h-40 my-2" />
+            <div class="grid grid-cols-2 gap-x-1">
+              <div>
+                <h2 class="text-center font-semibold text-[#F7E1BC] text-sm">
+                  Espresso
+                </h2>
+              </div>
+              <div>
+                <h2 class="text-center font-semibold text-[#F7E1BC] text-sm">
+                  ₱ 120
+                </h2>
+              </div>
+            </div>
+            <div class="justify-center flex">
+              <button
+                class="bg-[#221518] text-[#F7E1BC] w-20 rounded-lg m-2 font-semibold hover:bg-[#F7E1BC] hover:text-[#221518]"
+                onclick="Price(1)"
+              >
+                Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-[#7a5e46] shadow-lg rounded-xl flex justify-center w-44">
+          <div>
+            <img
+              src="Cappuccino.webp"
+              alt=""
+              class="rounded-3xl h-40 mt-2 my-2"
+            />
+            <div class="grid grid-cols-2 gap-x-1">
+              <div>
+                <h2 class="text-center font-semibold text-[#F7E1BC] text-sm">
+                  Cappuccino
+                </h2>
+              </div>
+              <div>
+                <h2 class="text-center font-semibold text-[#F7E1BC] text-sm">
+                  ₱ 160
+                </h2>
+              </div>
+            </div>
+            <div class="justify-center flex">
+              <button
+                class="bg-[#221518] text-[#F7E1BC] w-20 rounded-lg m-2 font-semibold hover:bg-[#F7E1BC] hover:text-[#221518]"
+                onclick="Price(2)"
+              >
+                Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-[#7a5e46] shadow-lg rounded-xl flex justify-center w-44">
+          <div>
+            <img src="latte.webp" alt="" class="rounded-3xl h-40 mt-2 my-2" />
+            <div class="grid grid-cols-2 gap-x-1">
+              <div>
+                <h2 class="text-center font-semibold text-[#F7E1BC] text-sm">
+                  Latte
+                </h2>
+              </div>
+              <div>
+                <h2 class="text-center font-semibold text-[#F7E1BC] text-sm">
+                  ₱ 170
+                </h2>
+              </div>
+            </div>
+            <div class="justify-center flex">
+              <button
+                class="bg-[#221518] text-[#F7E1BC] w-20 rounded-lg m-2 font-semibold hover:bg-[#F7E1BC] hover:text-[#221518]"
+                onclick="Price(3)"
+              >
+                Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-[#7a5e46] shadow-lg rounded-xl flex justify-center w-44">
+          <div>
+            <img
+              src="Americano.webp"
+              alt=""
+              class="rounded-3xl h-40 mt-2 my-2"
+            />
+            <div class="grid grid-cols-2 gap-x-1">
+              <div>
+                <h2 class="text-center font-semibold text-[#F7E1BC] text-sm">
+                  Americano
+                </h2>
+              </div>
+              <div>
+                <h2 class="text-center font-semibold text-[#F7E1BC] text-sm">
+                  ₱ 130
+                </h2>
+              </div>
+            </div>
+            <div class="justify-center flex">
+              <button
+                class="bg-[#221518] text-[#F7E1BC] w-20 rounded-lg m-2 font-semibold hover:bg-[#F7E1BC] hover:text-[#221518]"
+                onclick="Price(4)"
+              >
+                Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-[#7a5e46] shadow-lg rounded-xl flex justify-center w-44">
+          <div>
+            <img src="Mocha.webp" alt="" class="rounded-3xl h-40 mt-2 my-2" />
+            <div class="grid grid-cols-2 gap-x-1">
+              <div>
+                <h2 class="text-center font-semibold text-[#F7E1BC] text-sm">
+                  Mocha
+                </h2>
+              </div>
+              <div>
+                <h2 class="text-center font-semibold text-[#F7E1BC] text-sm">
+                  ₱ 180
+                </h2>
+              </div>
+            </div>
+            <div class="justify-center flex">
+              <button
+                class="bg-[#221518] text-[#F7E1BC] w-20 rounded-lg m-2 font-semibold hover:bg-[#F7E1BC] hover:text-[#221518]"
+                onclick="Price(5)"
+              >
+                Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-[#7a5e46] shadow-lg rounded-xl flex justify-center w-44">
+          <div>
+            <img
+              src="Flat White.webp"
+              alt=""
+              class="rounded-3xl h-40 mt-2 my-2"
+            />
+            <div class="grid grid-cols-2 gap-x-1">
+              <div>
+                <h2 class="text-center font-semibold text-[#F7E1BC] text-sm">
+                  Flat White
+                </h2>
+              </div>
+              <div>
+                <h2 class="text-center font-semibold text-[#F7E1BC] text-sm">
+                  ₱ 170
+                </h2>
+              </div>
+            </div>
+            <div class="justify-center flex">
+              <button
+                class="bg-[#221518] text-[#F7E1BC] w-20 rounded-lg m-2 font-semibold hover:bg-[#F7E1BC] hover:text-[#221518]"
+                onclick="Price(6)"
+              >
+                Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-[#7a5e46] shadow-lg rounded-xl flex justify-center w-44">
+          <div>
+            <img
+              src="Macchiato.webp"
+              alt=""
+              class="rounded-3xl h-40 mt-2 my-2"
+            />
+            <div class="grid grid-cols-2 gap-x-1">
+              <div>
+                <h2 class="text-center font-semibold text-[#F7E1BC] text-sm">
+                  Macchiato
+                </h2>
+              </div>
+              <div>
+                <h2 class="text-center font-semibold text-[#F7E1BC] text-sm">
+                  ₱ 150
+                </h2>
+              </div>
+            </div>
+            <div class="justify-center flex">
+              <button
+                class="bg-[#221518] text-[#F7E1BC] w-20 rounded-lg m-2 font-semibold hover:bg-[#F7E1BC] hover:text-[#221518]"
+                onclick="Price(7)"
+              >
+                Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-[#7a5e46] shadow-lg rounded-xl flex justify-center w-44">
+          <div>
+            <img src="Cortado.webp" alt="" class="rounded-3xl h-40 mt-2 my-2" />
+            <div class="grid grid-cols-2 gap-x-1">
+              <div>
+                <h2 class="text-center font-semibold text-[#F7E1BC] text-sm">
+                  Cortado
+                </h2>
+              </div>
+              <div>
+                <h2 class="text-center font-semibold text-[#F7E1BC] text-sm">
+                  ₱ 160
+                </h2>
+              </div>
+            </div>
+            <div class="justify-center flex">
+              <button
+                class="bg-[#221518] text-[#F7E1BC] w-20 rounded-lg m-2 font-semibold hover:bg-[#F7E1BC] hover:text-[#221518]"
+                onclick="Price(8)"
+              >
+                Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-[#7a5e46] shadow-lg rounded-xl flex justify-center w-44">
+          <div>
+            <img
+              src="Affogato.webp"
+              alt=""
+              class="rounded-3xl h-40 mt-2 my-2"
+            />
+            <div class="grid grid-cols-2 gap-x-1">
+              <div>
+                <h2 class="text-center font-semibold text-[#F7E1BC] text-sm">
+                  Affogato
+                </h2>
+              </div>
+              <div>
+                <h2 class="text-center font-semibold text-[#F7E1BC] text-sm">
+                  ₱ 190
+                </h2>
+              </div>
+            </div>
+            <div class="justify-center flex">
+              <button
+                class="bg-[#221518] text-[#F7E1BC] w-20 rounded-lg m-2 font-semibold hover:bg-[#F7E1BC] hover:text-[#221518]"
+                onclick="Price(9)"
+              >
+                Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-[#7a5e46] shadow-lg rounded-xl flex justify-center w-44">
+          <div>
+            <img
+              src="Irish Coffee.webp"
+              alt=""
+              class="rounded-3xl h-40 mt-2 my-2"
+            />
+            <div class="grid grid-cols-2 gap-x-1">
+              <div>
+                <h2 class="text-center font-semibold text-[#F7E1BC] text-sm">
+                  Irish Coffee
+                </h2>
+              </div>
+              <div>
+                <h2 class="text-center font-semibold text-[#F7E1BC] text-sm">
+                  ₱ 200
+                </h2>
+              </div>
+            </div>
+            <div class="justify-center flex">
+              <button
+                class="bg-[#221518] text-[#F7E1BC] w-20 rounded-lg m-2 font-semibold hover:bg-[#F7E1BC] hover:text-[#221518]"
+                onclick="Price(10)"
+              >
+                Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-[#7a5e46] shadow-lg rounded-xl flex justify-center w-44">
+          <div>
+            <img
+              src="Ristretto.webp"
+              alt=""
+              class="rounded-3xl h-40 mt-2 my-2"
+            />
+            <div class="grid grid-cols-2 gap-x-1">
+              <div>
+                <h2 class="text-center font-semibold text-[#F7E1BC] text-sm">
+                  Ristretto
+                </h2>
+              </div>
+              <div>
+                <h2 class="text-center font-semibold text-[#F7E1BC] text-sm">
+                  ₱ 120
+                </h2>
+              </div>
+            </div>
+            <div class="justify-center flex">
+              <button
+                class="bg-[#221518] text-[#F7E1BC] w-20 rounded-lg m-2 font-semibold hover:bg-[#F7E1BC] hover:text-[#221518]"
+                onclick="Price(11)"
+              >
+                Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-[#7a5e46] shadow-lg rounded-xl flex justify-center w-44">
+          <div>
+            <img
+              src="Iced Latte.webp"
+              alt=""
+              class="rounded-3xl h-40 mt-2 my-2"
+            />
+            <div class="grid grid-cols-2 gap-x-1">
+              <div>
+                <h2 class="text-center font-semibold text-[#F7E1BC] text-sm">
+                  Iced Latter
+                </h2>
+              </div>
+              <div>
+                <h2 class="text-center font-semibold text-[#F7E1BC] text-sm">
+                  ₱ 180
+                </h2>
+              </div>
+            </div>
+            <div class="justify-center flex">
+              <button
+                class="bg-[#221518] text-[#F7E1BC] w-20 rounded-lg m-2 font-semibold hover:bg-[#F7E1BC] hover:text-[#221518]"
+                onclick="Price(12)"
+              >
+                Add
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--price -->
+      <div id="result"></div>
+    </div>
+  </body>
+  <script src="POS Coffee Shop.js"></script>
+</html>
